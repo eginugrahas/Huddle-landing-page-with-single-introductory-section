@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0px 50px 0px 50px;
+} 
+
+header {
+    display: flex;
+    padding: 20px;
+    min-height: 100px;
+}
+
+.logo-img {
+    width: 200px;
+}
+
+.main-section {
+    display: flex;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.left {
+    width: 60%;
+}
+
+
+.left .mockups-img {
+    width: 100%;
+}
+
+.right .mockups-img {
+    display: none;
+}
+
+.right {
+    width: 40%;
+}
+
+.inner-container {
+    max-width: 450px;
+    margin-left: 20px;
+}
+
+.inner-container h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.inner-container p {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;   
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 180px;
+    height: 50px;
+    color: hsl(257, 40%, 49%);
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 5px 5px 5px rgb(54, 59, 63);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social-media {
+    display: flex;
+	justify-content: flex-end;
+	padding: 0;
+	list-style-type: none;
+    margin: auto;
+
+}
+
+
+.social-media-list li {
+   display: inline-block;
+   margin-top: 100px;
+   
+}
+
+.social-media-list li a {
+    position: relative;
+    margin-left: 10px;
+}
+
+.icon-facebook, .icon-twitter, .icon-instagram {
+  border: 1px solid white;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+
+.icon-facebook:hover, .icon-twitter:hover, .icon-instagram:hover {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left   {
+        display: none;
+    }
+
+    .right .mockups-img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media-list li {
+        margin-top: 50px;
+    }
+
+    button {
+        margin: auto;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+}
+
